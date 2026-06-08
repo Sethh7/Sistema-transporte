@@ -1,0 +1,9 @@
+CREATE TABLE alocacao (
+	id_aloc INTEGER PRIMARY KEY,
+	dia DATE,
+	turno VARCHAR(20),
+	fk_id_linha INTEGER,
+	fk_id_onibus INTEGER,
+	FOREIGN KEY (fk_id_linha) REFERENCES linha(id_linha),
+	FOREIGN KEY (fk_id_onibus) REFERENCES onibus(id_onibus)
+);
