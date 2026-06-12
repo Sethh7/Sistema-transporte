@@ -11,11 +11,11 @@ try:
         user="postgres",
         password="gustavo123" # Verifique se essa é mesmo a senha
     )
-    print("✅ SUCESSO! A conexão está perfeita!")
+    print("SUCESSO! A conexão está perfeita!")
     
 
     cursor = conexao.cursor()
-    cursor.execute("SELECT * FROM  alocacao;") # MUDE ESTE NOME
+    cursor.execute("SELECT * FROM  alocacao;")
     print("SUCESSO! A tabela existe e foi encontrada!")
     
     conexao.close()
