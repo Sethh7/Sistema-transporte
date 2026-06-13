@@ -3,9 +3,9 @@ import psycopg
 def connect_to_db():
     """Estabelece conexão com o banco de dados do Docker utilizando psycopg v3"""
     return psycopg.connect(
-        dbname="curso_sql",       # Batendo com o POSTGRES_DB do docker
-        user="curso_user",        # Batendo com o POSTGRES_USER do docker
-        password="curso_password",# Batendo com o POSTGRES_PASSWORD do docker
+        dbname="curso_sql",     
+        user="curso_user",      
+        password="curso_password",
         host="localhost",
         port="5433" 
     )
@@ -16,8 +16,6 @@ def executar_scripts_sql(conn):
     # Coloque aqui o caminho dos seus arquivos .sql na ordem correta
     # Tabelas sem chaves estrangeiras primeiro, inserções de dados por último.
     arquivos_sql = [
-        'C:/Users/adrie/Downloads/Faculdade/3°p/Banco de dados/Projeto/Modelagem/Sistema-transporte/Scripts/Criação/cidade.sql',
-        'C:/Users/adrie/Downloads/Faculdade/3°p/Banco de dados/Projeto/Modelagem/Sistema-transporte/Scripts/População/cidade.sql'
     ]
     
     with conn.cursor() as cur:
