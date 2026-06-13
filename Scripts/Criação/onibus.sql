@@ -5,5 +5,5 @@ CREATE TABLE onibus (
 	fk_id_garagem INTEGER,
 	fk_id_modelo INTEGER,
 	FOREIGN KEY (fk_id_garagem) REFERENCES garagem(id_garagem),
-	FOREIGN KEY (fk_id_modelo) REFERENCES modelo modelo(id_modelo)
+	FOREIGN KEY (fk_id_modelo) REFERENCES modelo(id_modelo)
 );

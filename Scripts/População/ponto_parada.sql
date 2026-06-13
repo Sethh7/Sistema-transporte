@@ -1,5 +1,5 @@
 INSERT INTO PONTO_PARADA (id_ponto, nome, fk_id_bairro) VALUES 
-(1, 'Terminal Rodoviário - Arcoverde', 1
+(1, 'Terminal Rodoviário - Arcoverde', 1),
 (2, 'Terminal Rodoviário - Jupi', 2),
 (3, 'Terminal Rodoviário - São Bento do Una', 3),
 (4, 'Terminal Rodoviário - Bom Conselho', 4),
