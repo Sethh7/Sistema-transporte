@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: curso_password
       POSTGRES_DB: curso_sql
     ports:
-      - "5433:5433"
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql # <-- Alterado aqui (removido o /data)
     networks:
