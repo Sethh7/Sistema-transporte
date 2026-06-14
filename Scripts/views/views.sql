@@ -2,8 +2,8 @@
 
 CREATE VIEW vw_motorista_linhas AS
 SELECT 
-    f.nome AS nome_motorista,
-    l.codigo AS codigo_linha,
+    f.nome AS motorista,
+    l.codigo AS linha,
     e.turno,
     e.status
 FROM 
@@ -22,9 +22,9 @@ SELECT * FROM vw_motorista_linhas;
 CREATE VIEW vw_viagem_rotas AS
 SELECT 
     v.id_viagem,
-    l.codigo AS codigo_linha,
-    c_origem.nome AS cidade_origem,
-    c_destino.nome AS cidade_destino
+    l.codigo AS linha,
+    c_origem.nome AS cidade_de_origem,
+    c_destino.nome AS cidade_de_destino
 FROM 
     viagem v
 INNER JOIN 
